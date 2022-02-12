@@ -345,6 +345,7 @@ ol {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 
 .portfolio-subtitle {
