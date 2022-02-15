@@ -147,6 +147,8 @@ ol {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* =========== Оформление карточек =========== */
@@ -170,12 +172,12 @@ ol {
 
 /*========================= Герой ========================*/
 .hero-wraper {
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
 }
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--hero-background-color);
 }
 
@@ -246,24 +248,27 @@ ol {
 }
 .features {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .features-item {
-  flex-basis: calc((100% - 120px) / 4);
-}
-.features-item:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 120px) / 4);
 }
 
 .company {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
-.company-item:not(:last-child) {
-  margin-right: 30px;
-}
 .company-item {
   flex-basis: calc((100% - 90px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 /* ======================== Наша команда ======================== */
@@ -291,12 +296,14 @@ ol {
 
 .team {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .team-member {
-  flex-basis: calc((100% - 120px) / 4);
-}
-.team-member:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 120px) / 4);
 }
 
 /* ======================== Портфолио ======================== */
@@ -330,7 +337,7 @@ ol {
 .button-navigation {
   display: flex;
   justify-content: center;
-  padding-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .button-navigation .portfolio-list:not(:last-child) {
@@ -358,22 +365,20 @@ ol {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .portfolio-item {
   flex-basis: calc((100% - 90px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-item:nth-child(3n) {
-  margin-right: 0px;
-}
-.portfolio-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
 
 /* ======================== Футер ========================*/
 
 .footer-nav {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--hero-background-color);
 }
 .footer-logo {
@@ -410,10 +415,7 @@ ol {
 .footer-contact:focus {
   color: var(--accent-color);
 }
-.footer-content {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 .footer {
   margin-top: 20px;
 }
